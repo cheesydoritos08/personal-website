@@ -1,0 +1,53 @@
+html {
+    background-color: rgb(90, 0, 0);
+}
+
+
+body {
+    height: 98vh; 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    border: 20px solid transparent;
+    border-image: url("../../imgs/borders-and-frames-picture-frames-clip-art-text-design-template-3584f412d1df14720d507b3b9f4b0815.png") 50 round;
+    height: 100%;
+    gap: 20vw;
+    display: flex;
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+}
+
+#intro-text {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    text-align: center;
+    border: 1px red dotted;
+    font-size: 10vw;
+    color: rgb(255, 253, 253);
+    text-shadow: rgb(36, 7, 7) 5px 5px;
+}
+
+#intro-text p {
+    font-size: 1.8vw;
+    border: 1px red dotted;
+}
+
+#first-line {
+    width: 30vw;
+}
+
+img {
+    height: 80vh;
+}
+
+.eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
