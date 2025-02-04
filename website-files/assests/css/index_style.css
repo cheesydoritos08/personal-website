@@ -15,33 +15,73 @@ body {
     border: 10vh solid transparent;
     border-image: url("../../imgs/borders-and-frames-picture-frames-clip-art-text-design-template-3584f412d1df14720d507b3b9f4b0815.png") 150 round;
     height: 80vh;
-    gap: 20vw;
+    gap: 2vw;
     display: flex;
     flex: 1;
     justify-content:center;
     align-items: center;
+    
 }
 
 #intro-text {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 60vh;
     text-align: center;
-    font-size: 10vw;
     color: rgb(255, 253, 253);
     text-shadow: rgb(36, 7, 7) 5px 5px;
+    align-self: center;
+    align-items: center;
+    font-size: 1vw;
+
 }
 
-#intro-text p {
-    font-size: 1.8vw;
+#img-container {
+    height: 80vh;
+    position: relative;
+}
+
+#door-img {
+    height: 80vh;
+    position: absolute;
+    left: 1vw;
+    z-index: -1;
+}
+
+#character-img {
+    height: 80vh;
+    z-index: 1;
+}
+
+#title-text {
+    margin: 3vh 0;
+    width: 60%;
+    font-size: 5vw;
+    display: flex;
+    font-family: 'needleteeth_regular', 'Arial';
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: rgb(12, 0, 0);
+    text-shadow: rgb(209, 8, 8) 5px 5px;
+}
+
+#title-text img {
+    margin: 0px;
+    width: 30%;
+    align-self: center;
+    height: auto;
 }
 
 #first-line {
+    margin: 3vh 0px 0px 0px;
     width: 30vw;
 }
 
-img {
-    height: 80vh;
+#intro-text #button {
+    text-decoration: underline;
+    margin: 0;
+    font-size: 2.7vw;
 }
 
 .eagle-lake-regular {
@@ -49,3 +89,12 @@ img {
     font-weight: 400;
     font-style: normal;
   }
+
+
+  @font-face {
+    font-family: 'needleteeth_regular';
+    src: url("../../fonts/webfontkit-20250203-194412/needleteeth_regular-webfont.woff2") format('woff2'),
+         url("../../fonts/webfontkit-20250203-194412/needleteeth_regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
