@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(65, 3, 3);
+    background-color: rgb(74, 0, 0);
 }
 
 
@@ -63,7 +63,7 @@ body {
     justify-content: center;
     align-self: center;
     color: rgb(12, 0, 0);
-    text-shadow: rgb(209, 8, 8) 5px 5px;
+    text-shadow: rgb(255, 0, 0) 5px 5px;
 }
 
 #title-text img {
@@ -78,11 +78,17 @@ body {
     width: 30vw;
 }
 
-#intro-text #button {
+a:link,
+a:visited,
+a:hover, 
+a:active {
     text-decoration: underline;
     margin: 0;
     font-size: 2.7vw;
+    color:  rgb(255, 253, 253);
 }
+
+
 
 .eagle-lake-regular {
     font-family: "Eagle Lake", serif;

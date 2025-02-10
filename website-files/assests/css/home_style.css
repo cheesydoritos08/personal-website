@@ -1,0 +1,78 @@
+body {
+    background-image: url("../../imgs/background-image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(65, 3, 3);
+}
+
+.home-div {
+    border: 1px rgb(136, 0, 0) solid;
+    background-color: rgb(0, 0, 0);
+}
+
+.home-div.primary {
+    margin: 1vh;
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#directory,
+#updatelog {
+    width: 10vw;
+
+}
+
+#aboutme {
+    width: 28vw;
+}
+
+#home-info-container {
+    height: 40vh;
+}
+
+.title {
+    background-color: rgb(136, 0, 0);
+    font-family: 'neckromancer', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin: .5vh;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 1vw;
+}
+
+.inner {
+    font-family: 'neckromancer', Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: rgb(136, 0, 0);
+    margin: .5vh;
+    height: 81%;
+    padding: 1vh ;
+}
+
+.home-div#header, 
+.home-div#footer {
+    height: 15vh;
+}
+
+#main-container {
+    position: fixed;
+    overflow: hidden;
+    border-radius: 1vw;
+    left: 25vw;
+}
+
+@font-face {
+    font-family: 'neckromancer';
+    src: url("../../fonts/webfontkit-20250210-001440/neck_romancer_regular-webfont.woff2") format('woff2'),
+         url("../../fonts/webfontkit-20250210-001440/neck_romancer_regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
