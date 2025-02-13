@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assests/css/home_style.css">
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+    <script src="../assests/jss/home.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="home-div" id="main-container">
-        <div class="home-div primary" id="header"></div>
+        <div class="home-div primary" id="header">
+            <marquee id="random-quote"></marquee>
+        </div>
         <div class="home-div primary" id="home-info-container">
             <div class="home-div secondary" id="directory">
                 <div class="title">
@@ -16,7 +20,9 @@
                 </div>
                 <div class="inner">
                     <ul>
-                        <li>Homepage</li>
+                        <li>
+                            <a href="./home.html">Homepage</a>
+                        </li>
                         <li>About Me</li>
                         <li>Shrines</li>
                         <li>Art Gallery</li>
@@ -25,8 +31,31 @@
                     </ul>
                 </div>
             </div>
-            <div class="home-div secondary" id="aboutme"></div>
-            <div class="home-div secondary" id="updatelog"></div>
+            <div class="home-div secondary" id="aboutme">
+                <div class="title">The stranger approaches...</div>
+                <div class="inner"> 
+                    You made it to my little abode. . .  How interesting.
+                    It's nothing special I'm afraid and it's quite the work
+                    in progress but it has served me well. How rude
+                    of me, I haven't introduced myself. I am Clorine. I have
+                    called this place home for as long as the sun has risen
+                    in the morning, not like I have seen it in recent centuries.
+                    I urge you to take a look around. Maybe you'll find something
+                    that will peak your interest. 
+                </div>
+            </div>
+            <div class="home-div secondary" id="chatbox-container">
+                <div class="title">=+= Chatbox =+=</div>
+                <div class="inner" id="chatbox">
+                    <iframe src='https://iframe.chat/embed?chat=09745412' id='chattable' frameborder='none'></iframe>
+                    <script>
+                        chattable.initialize({
+                          stylesheet: "../assests/css/chattable.css"
+                        });
+                      </script>
+                              
+                </div>
+            </div>
         </div>
         <div class="home-div primary"></div>
         <div class="home-div primary" id="footer"></div>

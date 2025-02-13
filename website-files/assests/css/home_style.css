@@ -6,7 +6,7 @@ body {
 }
 
 .home-div {
-    border: 1px rgb(136, 0, 0) solid;
+    border: 1px rgb(133, 133, 133) solid;
     background-color: rgb(0, 0, 0);
 }
 
@@ -19,13 +19,26 @@ body {
 }
 
 #directory,
-#updatelog {
+#chatbox {
     width: 10vw;
-
 }
+
+#chatbox-container {
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
+#directory {
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+}
+
 
 #aboutme {
     width: 28vw;
+    border: none;
 }
 
 #home-info-container {
@@ -34,6 +47,7 @@ body {
 
 .title {
     background-color: rgb(136, 0, 0);
+    text-shadow: 2px 1px rgb(133, 133, 133);
     font-family: 'neckromancer', Arial, Helvetica, sans-serif;
     font-weight: 800;
     margin: .5vh;
@@ -49,6 +63,7 @@ ul {
 }
 
 .inner {
+    text-shadow: 1px 1px rgb(133, 133, 133);
     font-family: 'neckromancer', Arial, Helvetica, sans-serif;
     font-size: large;
     background-color: rgb(136, 0, 0);
@@ -62,6 +77,27 @@ ul {
     height: 15vh;
 }
 
+#aboutme .title
+ {
+    font-size: 1.5vw;
+    justify-content: start;
+    padding: 1vh 0 1vh .3vw ;
+    background-color: rgb(0, 0, 0);
+    color:  rgb(136, 0, 0);
+    border-bottom: 2px rgb(133, 133, 133) dotted;
+}
+
+#aboutme .inner {
+    font-family: "nightmare", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    justify-content: start;
+    padding: 1vh 0 1vh .3vw ;
+    background-color: rgb(0, 0, 0);
+    height: 70%;
+    color:  rgb(136, 0, 0);
+}
+
 #main-container {
     position: fixed;
     overflow: hidden;
@@ -69,10 +105,52 @@ ul {
     left: 25vw;
 }
 
+#chattable {
+    height: 290px;
+    width: 10vw;
+}
+
+#header {
+    border-radius: 10px 10px 0 0;
+}
+
+#footer {
+    border-radius: 0 0 10px 10px;
+}
+
+
+#header marquee {
+    display: flex;
+    align-self: flex-end;
+    border-top: 1px rgb(133, 133, 133) solid;
+    text-shadow: 1px 1px rgb(133, 133, 133);
+    font-size: 15px;
+    padding-top: 1vh;;
+    color: rgb(136, 0, 0);
+    font-family: "neckromancer", Arial, Helvetica, sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover, 
+a:active {
+    text-decoration: underline;
+    margin: 0;
+    color: black;
+}
+
 @font-face {
     font-family: 'neckromancer';
     src: url("../../fonts/webfontkit-20250210-001440/neck_romancer_regular-webfont.woff2") format('woff2'),
          url("../../fonts/webfontkit-20250210-001440/neck_romancer_regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nightmare';
+    src: url("../../fonts/the-nightmare-font/the_nightmare-webfont.woff2") format('woff2'),
+         url("../../fonts/the-nightmare-font/the_nightmare-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
