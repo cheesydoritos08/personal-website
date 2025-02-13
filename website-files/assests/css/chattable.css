@@ -1,0 +1,164 @@
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+ }
+ body {
+   background-color: rgb(80,0,0);
+   font-family: 'VANILLAEXTRACT', Verdana, sans-serif;
+ }
+  #background {
+     background-color:  rgb(136, 0, 0);
+    }
+   
+ .allMessages {
+  font-size: 10pt;
+  display: inline-block;
+  font-family: 'VANILLAEXTRACT', Verdana, sans-serif;
+  clear: both;
+  min-width: 25vw;
+  transition: transform 500ms ease;
+ }
+ .allMessages > p {
+  animation-name: hue;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ }
+ .allMessages.containsOnlyEmojis .emoji {
+   height: 50px;
+ }
+ .msgWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 20px);
+  align-items: center;
+  padding: 10px;
+ }
+ .msgWrapper:has(.received) {
+  justify-content: flex-start;
+ }
+ .msgWrapper:has(.sent) {
+  justify-content: flex-end;
+ }
+ .msgBody {
+   font-family: Verdana;
+ }
+ .sent {
+  float: right;
+  border-radius: 10px 10px 0 10px;
+  background-color: rgb(133, 133, 133);
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 3px rgb(255,255,255);
+  animation-direction: alternate-reverse;
+ }
+ 
+ .sent:hover {
+   transform: scale(1.15) rotate(-5deg);
+ }
+ .recieved {
+  float: left;
+  border-radius: 10px 10px 10px 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(133, 133, 133);
+  box-shadow: -2px 2px 3px rgb(133, 133, 133);
+ }
+ .recieved:hover {
+   transform: scale(1.15) rotate(5deg);
+ }
+ .sent + #timestamp {
+  text-align: right !important;
+ }
+ .recieved + #timestamp {
+  text-align: left !important;
+ }
+ .recieved .senderInfo {
+   color: rgb(133, 133, 133);
+ }
+ .sent .senderInfo {
+   color: rbg(0,0,0);
+ }
+ .senderInfo {
+  font-weight: bold;
+ }
+ .role {
+  display: none;
+ }
+ #background {
+  display: block;
+ }
+ #input {
+  background-color: rgb(80,0,0);   
+  color: rgb(133, 133, 133);
+  padding: 5px;
+ }
+ 
+ #input:empty::before {
+   content: "Entertain me with your chatter";
+   color: rgb(133, 133, 133);
+ }
+ #timestamp {
+  display: block;
+  clear: both;
+  font-size: 10pt;
+  color: #555;
+  font-family: arial;
+  padding: 0 15px 0 15px;
+  width: calc(100% - 30px);
+ }
+ 
+ #top_banner {
+   background: #5D3;
+   box-shadow: 0 1px 2px #555;
+   display: none;
+   position: relative;
+   z-index: 4;
+ }
+ .pinned {
+  position: static;
+ }
+ .pinned:after {
+  display: none;
+ }
+ #emojiTray img {
+   height: 20pt;
+ }
+ #emojiTray img:hover {
+   height: 22pt;
+ }
+ #emojiTray {
+  background-color: rgb(80,0,0);
+  border: 0px;
+  color: rgb(133, 133, 133);
+ }
+ 
+ #save {
+   background-color: rgb(0,0,0);
+   color: rgb(133, 133, 133);
+   font-size: 12pt;
+   padding: 10px;
+   border: none;
+   border-radius: 1.25em;
+   font-family: "VANILLAEXTRACT", verdana;
+ }
+ #loadMore {
+   color: #FFF;
+   text-shadow: -1px -1px 2px #000, -1px 1px 2px #000, 1px -1px 2px #000, 1px 1px 2px #000;
+   transition: transform 500ms ease;
+ }
+ #loadMore:hover {
+   transform: scale(1.25) rotate(-5deg);
+ }
+ #settings {
+   filter: invert(100%);
+   transition: transform 500ms linear;
+ }
+ #settings:hover {
+   transform: rotate(180deg);
+ }
