@@ -1,189 +1,176 @@
 * {
     box-sizing: border-box;
 }
-html, body {
-    overflow-x: hidden;
-    height: 100%;
-}
+
 
 body {
-    background-image: url("../../imgs/background-image.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgb(65, 3, 3);
-    margin: 0px;
+    background-image: url("../../imgs/redbg.png");
+    background-repeat: repeat;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
 }
 
 .home-div {
-    border: 1px rgb(133, 133, 133) solid;
-    background-color: rgb(0, 0, 0);
-    max-width: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(74, 0, 0);
+}
+
+#main-container {
+    border: 4rem solid transparent;
+    border-image: url("../../imgs/portraitbg.png") 80 150  round;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 5% 20%;
+    padding: 10px;
+    background-color: rgba(86, 5, 5, 0.689);
+    border-radius: 10px;
+    width: fit-content;
 }
 
 .home-div.primary {
-    margin: 1%;
-    max-height: 50%;
-    max-width: 100%;
-    display:flex;
+    display: flex;
 }
 
-#chattable {
-    height: 100%;
-    max-width: 100%;
+/* header css */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1rem, 3rem, 20vh);
+    align-items: center;
+    font-family: 'neckromancer';
+    padding: 1rem 0rem .3rem 0rem;
+    gap: 2vh;
+    color: rgb(255, 229, 229);
+    text-shadow: 2px 3px rgb(168, 9, 9);
+    border-bottom: 1px black solid;
 }
 
-
-#chatbox-container {
-    border-bottom: none;
-    border-top: none;
-    border-right: none;
-    overflow: hidden;
+#header marquee {
+    border-top: 3px black double;
+    padding-top: 1vh;
+    font-size: clamp(.4rem, 1rem, 10vh);
+    text-shadow: 2px 1px rgb(168, 9, 9);
 }
 
-#chatbox {
-    width: fit-content;
-    height: 87%;
-}
+/* first div */
 
-#directory {
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    width: 30%;
-}
-
-
-#aboutme {
-    width: 100%;
-    border: none;
-    overflow: hidden;
-    background-image: url(../../imgs/portraitclorine.png);
-    background-repeat: no-repeat;
-    background-size: 60% 87%;
-    background-position: 130% 100%;
-}
-
-#home-info-container {
-    height: max-content;
+ul {
+    padding: 0 1vw;
 }
 
 .title {
-    background-color: rgb(136, 0, 0);
-    text-shadow: 2px 1px rgb(133, 133, 133);
-    font-family: 'neckromancer', Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    font-size: 1vw ;
-    margin: 2%;
+    border-top: none;
+    border-bottom: 3px black double;
+    padding: 1vw;
+    font-family: 'neckromancer';
+    text-shadow: 2px 1px rgb(168, 9, 9);
+    font-size: 1vw;
+    background-image: url("../../imgs/greybg.png");
+    background-size: contain;
+    text-align: center;
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul {
-    margin: 0;
-    padding: 0 0 0 1vw;
-}
-
 .inner {
-    text-shadow: 1px 1px rgb(133, 133, 133);
-    font-family: 'neckromancer', Arial, Helvetica, sans-serif;
+    padding: 0 1vw;
+    font-family: 'nightmare';
     font-size: 1vw;
-    background-color: rgb(136, 0, 0);
-    margin: 2%;
-    padding: 5%;
-    height: 87%;
+    font-weight: 900;
+    color: black;
+    text-shadow: 1px 1px rgb(110, 57, 57);
 }
 
-.home-div#header, 
-.home-div#footer {
-   max-height: 15vh;
+.home-div.secondary {
+    
 }
 
-#aboutme .title {
-    font-size: 1.5vw;
-    justify-content: start;
-    padding: 1% 0 1% 1%  ;
-    background-color: rgb(0, 0, 0);
-    color:  rgb(136, 0, 0);
-    border-bottom: 2px rgb(133, 133, 133) dotted;
+#directory {
+    width: 25%;
 }
 
-#wrapper {
-    height: 100px;
-    width: 1500px;
+#aboutme {
+    width: 50%
 }
 
-#wrapper img {
-    position: relative;
-    float:right;
-    height: 50%;
-    width: 50%;
-
-}
-#aboutme .inner {
-    display: flex;
-    flex-direction: row;
-    font-family: "nightmare", Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-    font-weight: 100;
-    padding: 1% 0 1% 1% ;
-    background-color: rgba(0, 0, 0, 0);
-    max-height: 70%;
-    color:  rgb(136, 0, 0);
-
+#chatbox-container {
+    width: 25%;
 }
 
-#main-container {
+#chatbox {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    overflow: hidden;
-    border-radius: 2%;
-    height: 95%;
-}
-
-#header {
-    border-radius: 10px 10px 0 0;
-    flex-basis: 135px;
-    max-height: 100px;
-}
-
-#footer {
-    border-radius: 0 0 10px 10px;
+    padding: 0;
 }
 
 
-#header marquee {
-    display: flex;
-    align-self: flex-end;
-    border-top: 1px rgb(133, 133, 133) solid;
-    text-shadow: 1px 1px rgb(133, 133, 133);
-    font-size: 15px;
-    padding-top: 1vh;;
-    color: rgb(136, 0, 0);
-    font-family: "neckromancer", Arial, Helvetica, sans-serif;
-}
+@media screen and (max-width: 1368px) {
+    #main-container {
+        margin: 40% 20%;
+        width: 90%;
+        border: 2rem solid transparent;
+        border-image: url("../../imgs/portraitbg.png") 80 150  round;
+    }
 
-a:link,
-a:visited,
-a:hover, 
-a:active {
-    text-decoration: underline;
-    margin: 0;
-    color: black;
+    .title {
+        font-size: 2vw;
+    }
+    .inner {
+        font-size: 2vw;
+    }
 }
 
 
+@media screen and (max-width: 853px), screen and (max-height: 500px){
+    #main-container {
+        margin: 0;
+        width: 100%;
+        border: 2rem solid transparent;
+        border-image: url("../../imgs/portraitbg.png") 80 150  round;
+    }
 
+    .title {
+        height: 10vh;
+        font-size: 2.5vw;
+    }
 
-
-/* @media screen and (max-width: 853px), screen and (max-height: 500px){
-
+    .inner {
+        height: fit-content;
+        padding: 0 1.3rem;
+        font-size: 1rem;
+    }
 }
-*/
+
 @media screen and (max-width: 480px){
-    
+    #directory, #chatbox-container, #aboutme {
+        width: auto;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .inner {
+        height: fit-content;
+        padding: 0 1.3rem;
+        font-size: 1rem;
+    }
+
+    .home-div.primary {
+        display: flex; 
+        height: 20%;
+        flex-direction: column;
+    }
+
+    .home-div.secondary {
+        width: 100%;
+    }
 
 }
 
