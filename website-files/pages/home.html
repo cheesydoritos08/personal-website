@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <link rel="stylesheet" href="../assests/css/home_style.css">
     <script src="https://iframe.chat/scripts/main.min.js"></script>
     <script src="../assests/jss/home.js" defer></script>
-    <title>Document</title>
+    <title>~ The Vampire's Lair ~</title>
 </head>
 <body>
 
@@ -34,17 +35,20 @@
             <div class="home-div secondary" id="aboutme">
                 <div class="title">The stranger approaches...</div>
                 <div class="inner"> 
+                    <div id="wrapper">
+                        <img src="../imgs/portraitclorine.png">
+                    </div> 
                     <p>
-                        You made it to my little abode. . .  How interesting.
+                        You made it to my little abode. . .  How interesting. 
+                        It's nothing special, I'm afraid. It's quite the work in progress
+                        but it has served me well. How rude of me, I haven't introduced myself
                         I am Clorine. I have called this place home for as long as 
                         the sun has risen in the morning, not like I have seen it in 
                         recent centuries. I urge you to take a look around. Maybe you'll 
                         find something that will peak your interest.
                     </p>
-                    <div id="wrapper"></div>
                 </div>
-            </div>
-            
+            </div>          
             <div class="home-div secondary" id="chatbox-container">
                 <div class="title">=+= Chatbox =+=</div>
                 <div class="inner" id="chatbox">
@@ -56,9 +60,49 @@
                       </script>
                               
                 </div>
-            </div>
+            </div> 
         </div>
-        <div class="home-div primary"></div>
+        <div class="home-div primary">
+                    <div id="musicplayer">
+                        <!-- Music player by adilene@adilene.net! Much thanks to them ^^ -->
+                        <div>
+                            <marquee scrollamount="8" class="songtitle"></marquee>
+                        </div>
+                        
+                        <table class="controls">
+                            <tr>
+                                <td id="prev-trackname">
+                                    previous: Lovers Rock - TV Girl
+                                </td>
+                                <td>
+                                    <div class="prev-track" onclick="prevTrack()"><span class="material-icons md-48">skip_previous</span></div>
+                                </td>
+                                <td>
+                                    <div class="playpause-track" onclick="playpauseTrack()">
+                                        <i class="material-icons">play_circle</i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="next-track" onclick="nextTrack()"><i class="material-icons">skip_next</i></div>
+                                </td>
+                                <td id="next-trackname">
+                                    next: Duvet - Bôa
+                                </td>
+                            </tr>
+                        </table>
+                 
+                        <div class="seeking">
+                            <div class="current-time">00:00</div>
+                 
+                            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                 
+                            <div class="total-duration">0:00</div>
+                        </div>
+                 
+                        <audio id="music" src=""></audio> 
+                    </div>
+                    
+       </div>
         <div class="home-div primary" id="footer"></div>
     </div>
 </body>
