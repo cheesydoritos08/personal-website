@@ -52,78 +52,25 @@ const phrases = [
                           // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
                           let track_list = [
                               {
-                                  name: "annie. - wave to earth",
-                                  path: "../songs/annie.-wavetoearth.mp3"
+                                  name: "liebestraum - franz liszt",
+                                  path: "https://files.catbox.moe/klg5f2.mp3"
                               },
                               {
-                                  name: "Duvet - Bôa",
-                                  path: "../songs/Bôa-Duvet(Official Video).mp3"
+                                  name: "waltz no. 10 in b minor, op. 69 no. 2 - frédéric chopin",
+                                  path: "https://files.catbox.moe/joyghy.mp3"
                               },
                               {
-                                  name: "Alone - Doja Cat",
-                                  path: "../songs/DojaCat-Alone(Visualizer).mp3"
+                                  name: "16 waltzes, op 39: no. 9 in d minor - johannes brahms",
+                                  path: "https://files.catbox.moe/wlgnwr.mp3"
                               },
                               {
-                                  name: "Something About You - Eyedress & Dent May",
-                                  path: "../songs/EyedressDentMaySomethingAboutYou.mp3",
+                                  name: "5 pieces, op. 75, 'the trees': no. 5 granen (the spruce) - jean sibelius",
+                                  path: "https://files.catbox.moe/nqrcj7.mp3",
                               },
                               {
-                                  name: "Room Temperature - Faye Webster",
-                                  path: "../songs/FayeWebster-RoomTemperature.mp3",
+                                  name: "deux arabesques, l. 66, cd 74: i. première arabesque - claude debussy",
+                                  path: "https://files.catbox.moe/cps6ki.mp3",
                               },
-                              {
-                                  name: "For The First Time - Marc Demarco",
-                                  path: "../songs/FortheFirstTime.mp3",
-                              },
-                              {
-                                  name: "Infrunami - Steve Lacy",
-                                  path: "../songs/Infrunami.mp3",
-                              },
-                              {
-                                  name: "Fragile - Laufey",
-                                  path: "../songs/LaufeyFragile.mp3",
-                              },
-                              {
-                                  name: "Matrimony - Tennis",
-                                  path: "../songs/Matrimony.mp3",
-                              },
-                              {
-                                  name: "Sarah (Meet Me in The Sauna) - TV Girl",
-                                  path: "../songs/Sarah.mp3",
-                              },
-                              {
-                                  name: "Haunted - Laufey",
-                                  path: "../songs/LaufeyHaunted.mp3",
-                              },
-                              {
-                                  name: "Dark Red - Steve Lacy",
-                                  path: "../songs/DarkRed.mp3",
-                              },
-                              {
-                                  name: "Often - The Weeknd",
-                                  path: "../songs/Often.mp3",
-                              },
-                              {
-                                  name: "Please, Please, Please Let Me Get What I Want - The Smiths",
-                                  path: "../songs/PleasePleasePlease.mp3",
-                              },
-                              {
-                                  name: "Helmet - Steve Lacy",
-                                  path: "../songs/Helmet.mp3",
-                              },
-                              {
-                                  name: "The Party & After The Party - The Weeknd",
-                                  path: "../songs/TheParty.mp3",
-                              },
-                              {
-                                  name: "seasons - wave to earth",
-                                  path: "../songs/seasons.mp3",
-                              },
-                              {
-                                  name: "Lovers Rock - TV Girl",
-                                  path: "../songs/LoversRock.mp3",
-                              },
-                              
                               
                           ];
                           //
